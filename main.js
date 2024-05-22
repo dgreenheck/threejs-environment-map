@@ -10,7 +10,6 @@ renderer.shadowMap.enabled = false;
 renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
 renderer.toneMapping = THREE.NeutralToneMapping;
-renderer.toneMappingExposure = 1;
 
 document.body.appendChild(renderer.domElement);
 
@@ -25,7 +24,7 @@ controls.autoRotateSpeed = 1;
 controls.update();
 
 // SETUP SCENE
-const floorTexture = new THREE.TextureLoader().load('/grid.png');
+const floorTexture = new THREE.TextureLoader().load('grid.png');
 floorTexture.repeat = new THREE.Vector2(20, 20);
 floorTexture.wrapS = THREE.ReplaceWrapping;
 floorTexture.wrapT = THREE.ReplaceWrapping;
